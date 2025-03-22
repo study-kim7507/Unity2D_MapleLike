@@ -1,0 +1,350 @@
+syntax = "proto3";
+
+package Protocol;
+import "google/protobuf/timestamp.proto";
+option csharp_namespace = "Google.Protobuf.Protocol";
+
+
+enum MsgId {
+  S_CONNECTED = 0;
+  C_CLASS_CHOICE = 1;
+  S_ENTER_GAME = 2;
+  S_PLAYER_SPAWN = 3;
+  S_MONSTER_SPAWN = 4;
+  C_PLAYER_MOVE = 5;
+  S_PLAYER_MOVE = 6;
+  S_MONSTER_MOVE = 7;
+  C_PLAYER_DIE = 8;
+  S_LEAVE_GAME = 9;
+  S_PLAYER_DESPAWN = 10;
+  S_MONSTER_DESPAWN = 11;
+  S_ITEM_SPAWN = 12;
+  C_PLAYER_SKILL = 13;
+  S_PLAYER_SKILL = 14;
+  S_MONSTER_SKILL = 15;
+  C_HIT_MONSTER = 16;
+  S_HIT_MONSTER = 17;
+  C_PLAYER_DAMAGED = 18;
+  S_PLAYER_DAMAGED = 19;
+  C_CHANGE_MAP = 20;
+  C_BOSS_REGISTER = 21;
+  S_BOSS_REGISTER_DENY = 22;
+  S_BOSS_WAITING = 23;
+  C_BOSS_CANCLE = 24;
+  S_GAME_CLEAR = 25;
+  S_GET_EXP = 26;
+  C_LOOT_ITEM = 27;
+  S_LOOT_ITEM = 28;
+  S_ITEM_DESPAWN = 29;
+}
+
+message S_Connected {}
+
+message C_ClassChoice {
+  ClassType classType = 1;
+}
+
+message S_EnterGame {
+  int32 mapId = 1;
+  float spawnPointX = 2;
+  float spawnPointY = 3;
+  PlayerInfo playerInfo = 4;
+}
+
+message S_PlayerSpawn {
+  repeated PlayerInfo playerInfos = 1;
+}
+
+message S_MonsterSpawn {
+  repeated MonsterInfo monsterInfos = 1;
+}
+
+message C_PlayerMove {
+  PlayerState state = 1;
+  float positionX = 2;
+  float positionY = 3;
+  bool isRight = 4; //바라보는 방향 
+}
+
+message S_PlayerMove {
+  PlayerState state = 1;
+  int32 playerId = 2;
+  float positionX = 3;
+  float positionY = 4;
+  bool isRight = 5; //바라보는 방향 
+}
+
+message S_MonsterMove {
+  MonsterState state = 1;
+  int32 monsterId = 2;
+  float destinationX = 3;
+  float destinationY = 4;
+  bool isRight = 5; //바라보는 방향 
+}
+
+message C_PlayerDie { }
+
+message S_PlayerDie {
+  int32 playerId = 2;
+}
+
+message S_LeaveGame { }
+
+message S_PlayerDespawn {
+  repeated int32 playerIds = 1;
+}
+
+message S_MonsterDespawn {
+  repeated int32 monsterIds = 1;
+}
+
+message S_ItemSpawn{
+  ItemInfo itemInfo = 1;
+  ItemCategory itemCategory = 2;
+  ItemType itemType = 3;
+  int32 canOnlyOwnerLootTime = 4; // 10
+  int32 lifeTime  = 5; // 60
+}
+
+message C_PlayerSkill{
+	PlayerSkillType skillType = 1;
+}
+
+message S_PlayerSkill{
+	PlayerSkillType skillType = 1;
+	int32 skillid = 2;
+}
+
+message S_MonsterSkill{
+	int32 monsterId = 1;
+	BossMonsterSkillType skillType = 2;
+}
+
+message C_HitMonster {
+	int32 monsterId = 1;
+	repeated int32 playerAttackPowers = 2;
+}
+
+message S_HitMonster {
+	int32 playerId = 1;
+	int32 monsterId = 2;
+	repeated int32 damages = 3;
+	int32 monsterMaxHp = 4;
+	int32 monsterCurrentHp = 5;
+}
+
+message C_PlayerDamaged {
+  int32 damage = 1; // 클라이언트에서 계산을 마친 받은 데미지
+}
+
+message S_PlayerDamaged { 
+	int32 playerId = 1;
+	int32 damage = 2; // 클라이언트에서 계산을 마친 받은 데미지
+}
+
+message C_ChangeMap {
+	int32 mapId = 1;
+	int32 spawnPoint = 2;
+}
+
+message C_BossRegister {
+	BossEnterType bossEnterType = 1;
+}
+
+message S_BossRegisterDeny { }
+
+message S_BossWaiting {
+	int32 waitingCount = 1;
+}
+
+message C_BossCancle { }
+
+message S_GameClear {
+  repeated int32 playerIds = 1;
+}
+
+message S_GetExp {
+  int32 playerIds = 1;
+  int32 exp = 2;
+}
+
+message C_LootItem {
+  int32 ItemId = 1;
+}
+
+message S_LootItem {
+  int32 playerId = 1;
+  int32 ItemId = 2;
+}
+
+message S_ItemDespawn {
+  int32 ItemId = 1;
+}
+
+message PlayerInfo {
+  int32 playerId = 1;
+  string name = 2;
+  float positionX = 3;
+  float positionY = 4;
+  PlayerStatInfo statInfo = 5;
+  PlayerState CreatureState = 6;
+}
+
+message MonsterInfo {
+  int32 monsterId = 1;
+  string name = 2;
+  float destinationX = 3;
+  float destinationY = 4;
+  MonsterStatInfo statInfo = 5;
+  MonsterState CreatureState = 6;
+}
+
+message PlayerStatInfo {
+  int32 level = 1;
+  ClassType classType = 2; // 직업명
+  int32 hp = 3;
+  int32 maxHp = 4;
+  int32 mp = 5;
+  int32 maxMp = 6;
+  int32 attackPower = 7;
+  int32 magicPower = 8;
+  int32 defense = 9;
+  float speed = 10;
+  float jump = 11;
+  int32 currentExp = 12;
+  int32 totalExp = 13;
+}
+
+message MonsterStatInfo {
+  int32 id = 1;
+  int32 level = 2;
+  int32 hp = 3;
+  int32 maxHp = 4;
+  int32 attackPower = 5;
+  int32 defense = 6;
+  float speed = 7;
+  int32 exp = 8;
+}
+
+message ItemInfo {
+  int32 itemId = 1;  
+  int32 ownerId = 2;
+  bool canRootAnyOne = 3;
+  float positionX = 4;
+  float positionY = 5;
+  // TODO : 여기서 세부 아이템 정보를 관리한다.
+}
+
+enum GameObjectType {
+  NONE = 0;
+  PLAYER = 1;
+  NORMALMONSTER = 2;
+  BOSSMONSTER = 3;
+  ITEM = 4;				// 후순위
+  PROJECTILE = 5;		// 후순위 
+}
+
+enum ClassType{
+  CNONE = 0;
+  WARRIOR = 1;
+  MAGICIAN = 2;
+  ARCHER = 3;
+}
+
+// 늘어나면 구분하면 됨
+enum PlayerSkillType {
+  SKILL_WARRIOR = 0;
+  SKILL_MAGE = 1;
+  SKILL_ARCHER = 2;
+}
+
+// 늘어나면 구분하면 됨
+enum BossMonsterSkillType {
+  BOSSSKILL1 = 0;
+  BOSSSKILL2 = 1;
+  BOSSSKILL3 = 2;
+  BOSSSKILL4 = 3;
+  BOSSSKILL5 = 4;
+}
+
+// 쓸거면 쓰세요
+enum ItemCategory {
+	IC_GOLD = 0;
+	IC_ICONSUMABLE = 1;
+	IC_IEQUIP = 2;	
+}
+
+// 늘어나면 구분하면 됨
+enum ItemType {
+  // GOLD LINE =====================================
+  GOLD = 0;
+  
+  // CONSUMABLE LINE =====================================
+  HPPOTION1 = 100; // 빨간 포션 포지션
+  HPPOTION2 = 101; // 하얀 포션 포지션
+  MPPOTION1 = 201; // 파란 포션 포지션
+  MPPOTION2 = 202; // 마나 엘릭서 포지션
+  SUPERPOTION1 = 301; // 엘릭서 포지션
+  SUPERPOTION2 = 302; // 파워 엘릭서 포지션
+  
+  // EQUIP LINE =====================================
+  HELMET1 = 1001; // 5렙 헬멧
+  HELMET2 = 1002; // 10렙 헬멧 
+  ARMOR1 = 2001; // 5렙 갑옷
+  ARMOR2 = 2002; // 10렙 갑옷
+  BOOTS1 = 3001; // 5렙 부츠
+  BOOTS2 = 3002; // 10렙 부츠
+  
+  SWORD1 = 10001; // 1렙 칼
+  SWORD2 = 10002; // 5렙 칼
+  SWORD3 = 10003; // 10렙 칼
+  STAFF1 = 20001; // 1렙 스테프
+  STAFF2 = 20002; // 5렙 스테프
+  STAFF3 = 20003; // 10렙 
+  ARROW1 = 30001; // 1렙 활
+  ARROW2 = 30002; // 5렙 활
+  ARROW3 = 30003; // 10렙 활
+}
+
+// 플레이어와 작동방식 ex. FSM? 을 보고 한번 맞추긴 해야겠다.
+enum PlayerState {
+  P_IDLE = 0;
+  P_MOVING = 1;
+  P_JUMP = 2;
+  P_STUN = 3;
+  P_ATTACKSKILL = 4;
+  P_BUFFSKILL = 5;
+  P_DEBUFFSKILL = 6;
+  P_HANGING = 7;
+  P_DEAD = 8;
+}
+
+// 몬스터의 작동방식 ex. FSM? 을 보고 한번 맞추긴 해야겠다.
+enum MonsterState {
+  M_IDLE = 0;
+  M_MOVING = 1;
+  M_STUN = 2;
+  M_SKILL = 3;
+  M_DEAD = 4;
+}
+
+message SkillInfo {
+  int32 skillId = 1;
+}
+
+enum MapName {
+  Tutorial = 0;
+  Village = 1; // 마을
+  Field1 = 10; // 사냥터
+  Field2 = 11;
+  Field3 = 12;
+  Field4 = 13;
+  Field5 = 14;
+  BossWaitRoom = 21;
+  BossRoom = 22;
+}
+
+enum BossEnterType{
+  Single = 0;
+  Multi = 1;
+}

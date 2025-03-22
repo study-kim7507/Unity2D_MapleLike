@@ -1,0 +1,235 @@
+{
+  "mapDatabase": [
+    {
+      "_comment": "Tutorial(SnailPark)",
+      "id": 0,
+      "mapType": "Normal",
+      "mapMaxMonsterCount": 5,
+      "zoneCount": 1,
+      "zones": [
+        {
+          "id": 1,
+          "monsterType": "Normal",
+          "range": {
+            "minX": -3.1,
+            "maxX": 8.1,
+            "Y": 0.77
+          },
+          "levelRange": {
+            "minLevel": 1,
+            "maxLevel": 1
+          },
+          "zoneMaxMonsterCount": 5
+        }
+      ]
+    },
+    {
+      "_comment": "Village(Amherst)",
+      "id": 1,
+      "mapType": "Normal",
+      "mapMaxMonsterCount": 0,
+      "zoneCount": 0,
+      "zones": [
+      ]
+    },
+    {
+      "_comment": "Field1(HenesysHungtingGround1)",
+      "id": 10,
+      "mapType": "Normal",
+      "mapMaxMonsterCount": 28,
+      "zoneCount": 4,
+      "zones": [
+        {
+          "id": 1,
+          "monsterType": "Normal",
+          "range": {
+            "minX": -18.97,
+            "maxX": 17.36,
+            "Y": -3.75
+          },
+          "levelRange": {
+            "minLevel": 1,
+            "maxLevel": 1
+          },
+          "zoneMaxMonsterCount": 10
+        },
+        {
+          "id": 2,
+          "monsterType": "Normal",
+          "range": {
+            "minX": -11.83,
+            "maxX": 12.48,
+            "Y": 0.58
+          },
+          "levelRange": {
+            "minLevel": 1,
+            "maxLevel": 7
+          },
+          "zoneMaxMonsterCount": 10
+        },
+        {
+          "id": 3,
+          "monsterType": "Normal",
+          "range": {
+            "minX": -8.7,
+            "maxX": 9.63,
+            "Y": 5.16
+          },
+          "levelRange": {
+            "minLevel": 7,
+            "maxLevel": 8
+          },
+          "zoneMaxMonsterCount": 5
+        },
+        {
+          "id": 4,
+          "monsterType": "Normal",
+          "range": {
+            "minX": -7.48,
+            "maxX": 7.96,
+            "Y": 9.41
+          },
+          "levelRange": {
+            "minLevel": 8,
+            "maxLevel": 10
+          },
+          "zoneMaxMonsterCount": 3
+        }
+      ]
+    },
+    {
+      "_comment": "Field2",
+      "id": 11,
+      "mapType": "Normal",
+      "mapMaxMonsterCount": 10,
+      "zoneCount": 4,
+      "zones": [
+        {
+          "id": 1,
+          "monsterType": "Normal",
+          "range": {
+            "minX": -11.5,
+            "maxX": 11.78,
+            "Y": -3.74
+          },
+          "levelRange": {
+            "minLevel": 13,
+            "maxLevel": 16
+          },
+          "zoneMaxMonsterCount": 3
+        },
+        {
+          "id": 2,
+          "monsterType": "Normal",
+          "range": {
+            "minX": -11.5,
+            "maxX": 11.78,
+            "Y": -3.74
+          },
+          "levelRange": {
+            "minLevel": 19,
+            "maxLevel": 19
+          },
+          "zoneMaxMonsterCount": 1
+        },
+        {
+          "id": 3,
+          "monsterType": "Normal",
+          "range": {
+            "minX": -7.42,
+            "maxX": 7.16,
+            "Y": 0.7
+          },
+          "levelRange": {
+            "minLevel": 13,
+            "maxLevel": 16
+          },
+          "zoneMaxMonsterCount": 3
+        },
+        {
+          "id": 4,
+          "monsterType": "Normal",
+          "range": {
+            "minX": -5.46,
+            "maxX": 6.39,
+            "Y": 3.68
+          },
+          "levelRange": {
+            "minLevel": 13,
+            "maxLevel": 16
+          },
+          "zoneMaxMonsterCount": 3
+        }
+      ]
+    },
+    {
+      "_comment": "Field3",
+      "id": 12,
+      "mapType": "Normal",
+      "mapMaxMonsterCount": 7,
+      "zoneCount": 1,
+      "zones": [
+        {
+          "id": 1,
+          "monsterType": "Normal",
+          "range": {
+            "minX": -17.87,
+            "maxX": 13.75,
+            "Y": -2.79
+          },
+          "levelRange": {
+            "minLevel": 20,
+            "maxLevel": 20
+          },
+          "zoneMaxMonsterCount": 7
+        }
+      ]
+    },
+    {
+      "_comment": "BossWaitRoom",
+      "id": 21,
+      "mapType": "Normal",
+      "mapMaxMonsterCount": 0,
+      "zoneCount": 0,
+      "zones": [
+      ]
+    },
+    {
+      "_comment": "BossRoom",
+      "id": 22,
+      "mapType": "Boss",
+      "mapMaxMonsterCount": 1,
+      "zoneCount": 2,
+      "zones": [
+        {
+          "id": 1,
+          "monsterType": "Boss",
+          "range": {
+            "minX": -20.03,
+            "maxX": 16.49,
+            "Y": -2
+          },
+          "levelRange": {
+            "minLevel": 1,
+            "maxLevel": 9999
+          },
+          "zoneMaxMonsterCount": 1
+        },
+        {
+          "id": 2,
+          "monsterType": "Normal",
+          "range": {
+            "minX": -20.03,
+            "maxX": 16.49,
+            "Y": -2.56
+          },
+          "levelRange": {
+            "minLevel": 20,
+            "maxLevel": 20
+          },
+          "zoneMaxMonsterCount": 0
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,832 @@
+fileFormatVersion: 2
+guid: 5b58ce1625060274e86f2c2cac698e3a
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 5201119165257835349
+    second: Item.backgrnd3_0
+  - first:
+      213: 5201102815248410574
+    second: Item.backgrnd3_1
+  - first:
+      213: 1744592654264003180
+    second: Item.backgrnd3_2
+  - first:
+      213: -129356225125146194
+    second: Item.backgrnd3_3
+  - first:
+      213: -4079970243013419319
+    second: Item.backgrnd3_4
+  - first:
+      213: -1424981641991187428
+    second: Item.backgrnd3_5
+  - first:
+      213: -8519736086168236072
+    second: Item.backgrnd3_6
+  - first:
+      213: -4646423821942809252
+    second: Item.backgrnd3_7
+  - first:
+      213: -3734558950884807414
+    second: Item.backgrnd3_8
+  - first:
+      213: -5937930453399705636
+    second: Item.backgrnd3_9
+  - first:
+      213: -7264808054425512098
+    second: Item.backgrnd3_10
+  - first:
+      213: -9040189059534762952
+    second: Item.backgrnd3_11
+  - first:
+      213: 927579661390997243
+    second: Item.backgrnd3_12
+  - first:
+      213: 6015917021038593167
+    second: Item.backgrnd3_13
+  - first:
+      213: -6495305008260207532
+    second: Item.backgrnd3_14
+  - first:
+      213: 1493263312164021087
+    second: Item.backgrnd3_15
+  - first:
+      213: -1759370791677202806
+    second: Item.backgrnd3_16
+  - first:
+      213: -5633679475904359534
+    second: Item.backgrnd3_17
+  - first:
+      213: -8103617829044829941
+    second: Item.backgrnd3_18
+  - first:
+      213: 8842614814606433558
+    second: Item.backgrnd3_19
+  - first:
+      213: 8671389402101894138
+    second: Item.backgrnd3_20
+  - first:
+      213: -2869037391616193735
+    second: Item.backgrnd3_21
+  - first:
+      213: 1539334271299322723
+    second: Item.backgrnd3_22
+  - first:
+      213: 8747254458300640732
+    second: Item.backgrnd3_23
+  - first:
+      213: 6970084518974011329
+    second: Item.backgrnd3_24
+  - first:
+      213: -8062887729600024423
+    second: Item.backgrnd3_25
+  - first:
+      213: 7117503310601847901
+    second: Item.backgrnd3_26
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Item.backgrnd3_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 291
+        width: 185
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5536ba7f2561e2840800000000000000
+      internalID: 5201119165257835349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Item.backgrnd3_1
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 253
+        width: 35
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec76a2f24770e2840800000000000000
+      internalID: 5201102815248410574
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Item.backgrnd3_2
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 253
+        width: 35
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c6a692b96c9063810800000000000000
+      internalID: 1744592654264003180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Item.backgrnd3_3
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 253
+        width: 35
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea12ee7d23f643ef0800000000000000
+      internalID: -129356225125146194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Item.backgrnd3_4
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 253
+        width: 35
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ce550b3ea80167c0800000000000000
+      internalID: -4079970243013419319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Item.backgrnd3_5
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 211
+        width: 35
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c1499a91fb2793ce0800000000000000
+      internalID: -1424981641991187428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Item.backgrnd3_6
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 211
+        width: 35
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8df8ddb4b21d3c980800000000000000
+      internalID: -8519736086168236072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Item.backgrnd3_7
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 211
+        width: 35
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c5d9f29d626948fb0800000000000000
+      internalID: -4646423821942809252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Item.backgrnd3_8
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 211
+        width: 35
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a0d61c3bb6e2c2cc0800000000000000
+      internalID: -3734558950884807414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Item.backgrnd3_9
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 169
+        width: 35
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd7e22096bb389da0800000000000000
+      internalID: -5937930453399705636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Item.backgrnd3_10
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 169
+        width: 35
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e57129aa0973e2b90800000000000000
+      internalID: -7264808054425512098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Item.backgrnd3_11
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 169
+        width: 35
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 83cce0482fbca8280800000000000000
+      internalID: -9040189059534762952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Item.backgrnd3_12
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 169
+        width: 35
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf6661a99cc6fdc00800000000000000
+      internalID: 927579661390997243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Item.backgrnd3_13
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 127
+        width: 35
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f844b3d28a4dc7350800000000000000
+      internalID: 6015917021038593167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Item.backgrnd3_14
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 127
+        width: 35
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 45ca5d2328a0cd5a0800000000000000
+      internalID: -6495305008260207532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Item.backgrnd3_15
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 127
+        width: 35
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f53e8ad121329b410800000000000000
+      internalID: 1493263312164021087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Item.backgrnd3_16
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 127
+        width: 35
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a8ee1e526957597e0800000000000000
+      internalID: -1759370791677202806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Item.backgrnd3_17
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 85
+        width: 35
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 293df4c7d5621d1b0800000000000000
+      internalID: -5633679475904359534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Item.backgrnd3_18
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 85
+        width: 35
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b01c240f48a2a8f80800000000000000
+      internalID: -8103617829044829941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Item.backgrnd3_19
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 85
+        width: 35
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 61d193ed25747ba70800000000000000
+      internalID: 8842614814606433558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Item.backgrnd3_20
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 85
+        width: 35
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: afbce5dd7b6f65870800000000000000
+      internalID: 8671389402101894138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Item.backgrnd3_21
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 43
+        width: 35
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 93b476171b12f28d0800000000000000
+      internalID: -2869037391616193735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Item.backgrnd3_22
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 43
+        width: 35
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 363816f2d50dc5510800000000000000
+      internalID: 1539334271299322723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Item.backgrnd3_23
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 43
+        width: 35
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cdd26fab59d746970800000000000000
+      internalID: 8747254458300640732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Item.backgrnd3_24
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 43
+        width: 35
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c735efd0f6bab060800000000000000
+      internalID: 6970084518974011329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Item.backgrnd3_25
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 17
+        width: 102
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 990b555345eda1090800000000000000
+      internalID: -8062887729600024423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Item.backgrnd3_26
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 0
+        width: 96
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d5407140d8376c260800000000000000
+      internalID: 7117503310601847901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Item.backgrnd3_0: 5201119165257835349
+      Item.backgrnd3_1: 5201102815248410574
+      Item.backgrnd3_10: -7264808054425512098
+      Item.backgrnd3_11: -9040189059534762952
+      Item.backgrnd3_12: 927579661390997243
+      Item.backgrnd3_13: 6015917021038593167
+      Item.backgrnd3_14: -6495305008260207532
+      Item.backgrnd3_15: 1493263312164021087
+      Item.backgrnd3_16: -1759370791677202806
+      Item.backgrnd3_17: -5633679475904359534
+      Item.backgrnd3_18: -8103617829044829941
+      Item.backgrnd3_19: 8842614814606433558
+      Item.backgrnd3_2: 1744592654264003180
+      Item.backgrnd3_20: 8671389402101894138
+      Item.backgrnd3_21: -2869037391616193735
+      Item.backgrnd3_22: 1539334271299322723
+      Item.backgrnd3_23: 8747254458300640732
+      Item.backgrnd3_24: 6970084518974011329
+      Item.backgrnd3_25: -8062887729600024423
+      Item.backgrnd3_26: 7117503310601847901
+      Item.backgrnd3_3: -129356225125146194
+      Item.backgrnd3_4: -4079970243013419319
+      Item.backgrnd3_5: -1424981641991187428
+      Item.backgrnd3_6: -8519736086168236072
+      Item.backgrnd3_7: -4646423821942809252
+      Item.backgrnd3_8: -3734558950884807414
+      Item.backgrnd3_9: -5937930453399705636
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

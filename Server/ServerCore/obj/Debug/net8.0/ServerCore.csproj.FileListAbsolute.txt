@@ -1,0 +1,11 @@
+C:\Users\Win10\Desktop\Unity2D_MapleLike\Server\ServerCore\bin\Debug\net8.0\ServerCore.deps.json
+C:\Users\Win10\Desktop\Unity2D_MapleLike\Server\ServerCore\bin\Debug\net8.0\ServerCore.dll
+C:\Users\Win10\Desktop\Unity2D_MapleLike\Server\ServerCore\bin\Debug\net8.0\ServerCore.pdb
+C:\Users\Win10\Desktop\Unity2D_MapleLike\Server\ServerCore\obj\Debug\net8.0\ServerCore.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Win10\Desktop\Unity2D_MapleLike\Server\ServerCore\obj\Debug\net8.0\ServerCore.AssemblyInfoInputs.cache
+C:\Users\Win10\Desktop\Unity2D_MapleLike\Server\ServerCore\obj\Debug\net8.0\ServerCore.AssemblyInfo.cs
+C:\Users\Win10\Desktop\Unity2D_MapleLike\Server\ServerCore\obj\Debug\net8.0\ServerCore.csproj.CoreCompileInputs.cache
+C:\Users\Win10\Desktop\Unity2D_MapleLike\Server\ServerCore\obj\Debug\net8.0\ServerCore.dll
+C:\Users\Win10\Desktop\Unity2D_MapleLike\Server\ServerCore\obj\Debug\net8.0\refint\ServerCore.dll
+C:\Users\Win10\Desktop\Unity2D_MapleLike\Server\ServerCore\obj\Debug\net8.0\ServerCore.pdb
+C:\Users\Win10\Desktop\Unity2D_MapleLike\Server\ServerCore\obj\Debug\net8.0\ref\ServerCore.dll

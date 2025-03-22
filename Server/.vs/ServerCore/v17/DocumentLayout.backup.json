@@ -1,0 +1,85 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Win10\\Desktop\\Unity2D_MapleLike\\Server\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{AE3113E8-89CA-486C-AB54-202B166AA00E}|ServerContents\\ServerContents.csproj|c:\\users\\win10\\desktop\\unity2d_maplelike\\server\\servercontents\\packet\\packethandler_sky.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE3113E8-89CA-486C-AB54-202B166AA00E}|ServerContents\\ServerContents.csproj|solutionrelative:servercontents\\packet\\packethandler_sky.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE3113E8-89CA-486C-AB54-202B166AA00E}|ServerContents\\ServerContents.csproj|c:\\users\\win10\\desktop\\unity2d_maplelike\\server\\servercontents\\room\\gameroom.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE3113E8-89CA-486C-AB54-202B166AA00E}|ServerContents\\ServerContents.csproj|solutionrelative:servercontents\\room\\gameroom.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE3113E8-89CA-486C-AB54-202B166AA00E}|ServerContents\\ServerContents.csproj|c:\\users\\win10\\desktop\\unity2d_maplelike\\server\\servercontents\\packet\\packethandler_kkh.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE3113E8-89CA-486C-AB54-202B166AA00E}|ServerContents\\ServerContents.csproj|solutionrelative:servercontents\\packet\\packethandler_kkh.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE3113E8-89CA-486C-AB54-202B166AA00E}|ServerContents\\ServerContents.csproj|c:\\users\\win10\\desktop\\unity2d_maplelike\\server\\servercontents\\packet\\packethandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE3113E8-89CA-486C-AB54-202B166AA00E}|ServerContents\\ServerContents.csproj|solutionrelative:servercontents\\packet\\packethandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "PacketHandler_SKY.cs",
+              "DocumentMoniker": "C:\\Users\\Win10\\Desktop\\Unity2D_MapleLike\\Server\\ServerContents\\Packet\\PacketHandler_SKY.cs",
+              "RelativeDocumentMoniker": "ServerContents\\Packet\\PacketHandler_SKY.cs",
+              "ToolTip": "C:\\Users\\Win10\\Desktop\\Unity2D_MapleLike\\Server\\ServerContents\\Packet\\PacketHandler_SKY.cs",
+              "RelativeToolTip": "ServerContents\\Packet\\PacketHandler_SKY.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-11T07:03:48.396Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "GameRoom.cs",
+              "DocumentMoniker": "C:\\Users\\Win10\\Desktop\\Unity2D_MapleLike\\Server\\ServerContents\\Room\\GameRoom.cs",
+              "RelativeDocumentMoniker": "ServerContents\\Room\\GameRoom.cs",
+              "ToolTip": "C:\\Users\\Win10\\Desktop\\Unity2D_MapleLike\\Server\\ServerContents\\Room\\GameRoom.cs",
+              "RelativeToolTip": "ServerContents\\Room\\GameRoom.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-24T06:50:28.503Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "PacketHandler_KKH.cs",
+              "DocumentMoniker": "C:\\Users\\Win10\\Desktop\\Unity2D_MapleLike\\Server\\ServerContents\\Packet\\PacketHandler_KKH.cs",
+              "RelativeDocumentMoniker": "ServerContents\\Packet\\PacketHandler_KKH.cs",
+              "ToolTip": "C:\\Users\\Win10\\Desktop\\Unity2D_MapleLike\\Server\\ServerContents\\Packet\\PacketHandler_KKH.cs",
+              "RelativeToolTip": "ServerContents\\Packet\\PacketHandler_KKH.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-21T05:24:27.103Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "PacketHandler.cs",
+              "DocumentMoniker": "C:\\Users\\Win10\\Desktop\\Unity2D_MapleLike\\Server\\ServerContents\\Packet\\PacketHandler.cs",
+              "RelativeDocumentMoniker": "ServerContents\\Packet\\PacketHandler.cs",
+              "ToolTip": "C:\\Users\\Win10\\Desktop\\Unity2D_MapleLike\\Server\\ServerContents\\Packet\\PacketHandler.cs",
+              "RelativeToolTip": "ServerContents\\Packet\\PacketHandler.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAxwB0AAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-19T00:12:14.587Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

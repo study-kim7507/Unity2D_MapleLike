@@ -1,0 +1,151 @@
+{
+  "playerSpawnPositionDatabase": [
+    {
+      "currentMapId": 0,
+      "nextMaps": [
+        {
+          "nextMapId": 0,
+          "spawnPosition": {
+            "X": -13.64,
+            "Y": -1.93
+          }
+        },
+        {
+          "nextMapId": 1,
+          "spawnPosition": {
+            "X": -11.35,
+            "Y": 0.7
+          }
+        }
+      ]
+    },
+    {
+      "currentMapId": 1,
+      "nextMaps": [
+        {
+          "nextMapId": 0,
+          "spawnPosition": {
+            "X": 14.8,
+            "Y": -1.78
+          }
+        },
+        {
+          "nextMapId": 10,
+          "spawnPosition": {
+            "X": -16.26,
+            "Y": -2.68
+          }
+        },
+        {
+          "nextMapId": 12,
+          "spawnPosition": {
+            "X": -13.77,
+            "Y": -1.62
+          }
+        }
+      ]
+    },
+    {
+      "currentMapId": 10,
+      "nextMaps": [
+        {
+          "nextMapId": 1,
+          "spawnPosition": {
+            "X": 35.13,
+            "Y": 0.6
+          }
+        },
+        {
+          "nextMapId": 11,
+          "spawnPosition": {
+            "X": 2.81,
+            "Y": 7.99
+          }
+        }
+      ]
+    },
+    {
+      "currentMapId": 11,
+      "nextMaps": [
+        {
+          "nextMapId": 10,
+          "spawnPosition": {
+            "X": -6.68,
+            "Y": 10.54
+          }
+        },
+        {
+          "nextMapId": 1,
+          "spawnPosition": {
+            "X": -7.24,
+            "Y": 0.177
+          }
+        }
+      ]
+    },
+    {
+      "currentMapId": 12,
+      "nextMaps": [
+        {
+          "nextMapId": 1,
+          "spawnPosition": {
+            "X": 48.63,
+            "Y": 0.55
+          }
+        },
+        {
+          "nextMapId": 21,
+          "spawnPosition": {
+            "X": -21.8,
+            "Y": -1.25
+          }
+        }
+      ]
+    },
+    {
+      "currentMapId": 21,
+      "nextMaps": [
+        {
+          "nextMapId": 12,
+          "spawnPosition": {
+            "X": 12.24,
+            "Y": -1.71
+          }
+        },
+        {
+          "nextMapId": 22,
+          "spawnPosition": {
+            "X": -19.22,
+            "Y": -1.20
+          }
+        },
+        {
+          "nextMapId": 1,
+          "spawnPosition": {
+            "X": -7.24,
+            "Y": 0.177
+          }
+        }
+      ]
+    },
+    {
+      "currentMapId": 22,
+      "nextMaps": [
+        {
+          "nextMapId": 21,
+          "spawnPosition": {
+            "X": 10.29,
+            "Y": -1.27
+          }
+        },
+        {
+          "nextMapId": 1,
+          "spawnPosition": {
+            "X": -7.24,
+            "Y": 0.177
+          }
+        }
+      ]
+    }
+  ]
+}

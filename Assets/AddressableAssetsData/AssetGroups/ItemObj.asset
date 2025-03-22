@@ -1,0 +1,155 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: ItemObj
+  m_EditorClassIdentifier: 
+  m_GroupName: ItemObj
+  m_GUID: d53cdddaf1c08934ca9ecad6883691e8
+  m_SerializeEntries:
+  - m_GUID: 125cbdf2bf961154dbfe2f7626b5ea0a
+    m_Address: Arrow3
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - ItemObj
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 207bd791fbd88144ea08660343cb3647
+    m_Address: Mppotion2Parent
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - ItemObj
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 2b375e4819ab04f498a4d4dd02c5a842
+    m_Address: 06_Arrow1Parent
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - ItemObj
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 2d76d3301d51f03408d7916a0dfe4c91
+    m_Address: 10_Arrow2Parent
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - ItemObj
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 36c1651f4dcd6284e87bb3c3ca5553a2
+    m_Address: 11_Staff2Parent
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - ItemObj
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 382821bad41ab7d4187f1a53efdd0085
+    m_Address: Staff3
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - ItemObj
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 3c43c579607a4cb4ba2f33819c47bb7a
+    m_Address: 07_Hppotion1Parent
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - ItemObj
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 439a0722caa99644994bbd9903ced031
+    m_Address: Boots2
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - ItemObj
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 52633a06a660260419f188e381992b71
+    m_Address: 08_Mppotion1Parent
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - ItemObj
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 5f231492315214944b3d627b7461a346
+    m_Address: 05_Staff1Parent
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - ItemObj
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 70d711a507dd7e14f9c812b70cb5d70d
+    m_Address: Sword3
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - ItemObj
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 734269fb106e9e4459f4eed70a85e6d6
+    m_Address: Superpotion1Parent
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - ItemObj
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 792430611465b19499c513e74a1fec9f
+    m_Address: 03_Boots1Parent
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - ItemObj
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 833d0a74075b7cb4096209dc8e08ffdb
+    m_Address: 0_GoldParent
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - ItemObj
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 8a120f4f984ba604c81c062279066f84
+    m_Address: 09_Sword2Parent
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - ItemObj
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 8c471f6822406b74cb289fdf22a89e76
+    m_Address: Superpotion2Parent
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - ItemObj
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 9e06410ca0492394aa6532694b6a4af3
+    m_Address: Armor2
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - ItemObj
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: afbb706157ca6374d9b3aa2fd9c4826a
+    m_Address: 04_Sword1Parent
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - ItemObj
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: d6477b82468e2234387f2e5e5785090f
+    m_Address: 01_Helmet1Parent
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - ItemObj
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: f91100f30f8bfc5459a9380a5b177662
+    m_Address: 02_Armor1Parent
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - ItemObj
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: f9a8a1af3a0272c488fb4a56f4e731b8
+    m_Address: Hppotion2Parent
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - ItemObj
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: fc091548f130cd243bc516b70eda7895
+    m_Address: Helmet2
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - ItemObj
+    FlaggedDuringContentUpdateRestriction: 0
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: 0b8f85f16732ad1459db31594598a787, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 15307593f020eca43a1bb1e56e4bbc2e, type: 2}
+    - {fileID: 11400000, guid: 94225644fbb579d4998a3fc18ea19d0d, type: 2}

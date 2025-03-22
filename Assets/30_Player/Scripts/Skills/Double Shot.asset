@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5a4944f3beaf224eaea58c7f2522e43, type: 3}
+  m_Name: Double Shot
+  m_EditorClassIdentifier: 
+  skillName: Double Shot
+  maxLevel: 5
+  damage: 105
+  addDamage: 10
+  manaCost: 5
+  addManaCost: 5
+  hitCount: 2

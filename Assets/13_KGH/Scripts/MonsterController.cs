@@ -23,7 +23,8 @@ public class MonsterController : BaseController
     }
 
     public MonsterInfo info = new MonsterInfo();
-
+    public bool isInitialized = false;
+    
     public void UpdateInfo(MonsterInfo newInfo)
     {
         info = newInfo;
@@ -33,7 +34,7 @@ public class MonsterController : BaseController
         info.DestinationY = newInfo.DestinationY;
         info.StatInfo = newInfo.StatInfo;
         info.CreatureState = newInfo.CreatureState;
-        
+
         SetDestination(info.DestinationX, info.DestinationY);
     }
 
@@ -63,6 +64,8 @@ public class MonsterController : BaseController
         monsterAnimator = GetComponent<Animator>();
         monsterSpriteRenderer = GetComponent<SpriteRenderer>();
         monsterAudioSource = GetComponent<AudioSource>();
+
+        isInitialized = true;
 
         StartCoroutine(SpawnCoroutine());
     }

@@ -270,28 +270,38 @@ public class ObjectManager : MonoBehaviour
             return;
 
         // 몬스터의 경우, 각 스크립트에서 Destroy 처리.
-        if (go.TryGetComponent<MonsterController>(out MonsterController mc))
+        if (go.TryGetComponent<MonsterController>(out _))
         {
-            if (go.TryGetComponent<NormalMonsterController>(out NormalMonsterController nmc))
-            {
-                nmc.SetState(MonsterState.MDead);
-                nmc.Despawn();
-            }
-            else if (go.TryGetComponent<BossMonsterController>(out BossMonsterController bmc))
-            {
-                bmc.SetState(MonsterState.MDead);
-                bmc.Despawn();
-            }
-                
-            mc.SetCurrentHp(0);
-
-            // 퀘스트 업데이트
-            if (DeathManager.Instance.player.Id == mc.lastHitPlayerId && QuestManager.Instance.currentQuest != null)
-                QuestManager.Instance.currentQuest.UpdateQuest(mc.name);
+            StartCoroutine(SafeDespawnRoutine(go));
         }
-        else
-            Object.Destroy(go); // Unity 메인 스레드에서 오브젝트 삭제하고
+        else Object.Destroy(go); // Unity 메인 스레드에서 오브젝트 삭제하고
         _objects.Remove(id); // 딕셔너리에서 제거한다.
+    }
+    
+    private IEnumerator SafeDespawnRoutine(GameObject go)
+    {
+        if (!go.TryGetComponent<MonsterController>(out var mc))
+            yield break;
+
+        while (!mc.isInitialized)
+            yield return null;
+        
+        if (go.TryGetComponent<NormalMonsterController>(out NormalMonsterController nmc))
+        {
+            nmc.SetState(MonsterState.MDead);
+            nmc.Despawn();
+        }
+        else if (go.TryGetComponent<BossMonsterController>(out BossMonsterController bmc))
+        {
+            bmc.SetState(MonsterState.MDead);
+            bmc.Despawn();
+        }
+                
+        mc.SetCurrentHp(0);
+
+        // 퀘스트 업데이트
+        if (DeathManager.Instance.player.Id == mc.lastHitPlayerId && QuestManager.Instance.currentQuest != null)
+            QuestManager.Instance.currentQuest.UpdateQuest(mc.name);
     }
 
     // 딕셔너리에서 대상 오브젝트를 가져온다.

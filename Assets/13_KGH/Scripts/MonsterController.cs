@@ -12,7 +12,7 @@ using UnityEngine.UI;
 [RequireComponent(typeof(Animator))]
 [RequireComponent(typeof(SpriteRenderer))]
 [RequireComponent(typeof(AudioSource))]
-public class MonsterController : BaseController
+public class MonsterController : BaseController 
 {
     [Serializable]
     public class MonsterAudioClips
@@ -27,11 +27,14 @@ public class MonsterController : BaseController
     public void UpdateInfo(MonsterInfo newInfo)
     {
         info = newInfo;
+        Id = newInfo.MonsterId;
         info.Name = newInfo.Name;  
         info.DestinationX = newInfo.DestinationX;
         info.DestinationY = newInfo.DestinationY;
         info.StatInfo = newInfo.StatInfo;
         info.CreatureState = newInfo.CreatureState;
+        
+        SetDestination(info.DestinationX, info.DestinationY);
     }
 
     protected Rigidbody2D monsterRigidbody;
@@ -50,10 +53,10 @@ public class MonsterController : BaseController
     // 지속적으로 서버로부터 넘어오는 State 변경 관련 패킷에 대해 애니메이션 동기화를 위한 변수
     protected bool hasUsedSkill = false;                          
     protected bool isAlreadyDie = false;
-
+    protected bool isRight = false;
     public int lastHitPlayerId;
 
-    protected void OnEnable()
+    protected void Awake()
     {
         monsterRigidbody = GetComponent<Rigidbody2D>();
         monsterCollider = GetComponent<Collider2D>();
@@ -75,7 +78,6 @@ public class MonsterController : BaseController
     protected virtual void Skill() { }
     protected virtual void Dead() { }
     public virtual void SetState(MonsterState newState, int hitCount = 1) { }
-    public virtual void SetDirection(bool isRight) { }
 
     //======================================================================================================
     // 자식클래스에서 구조 변경이 필요없음. 공통적으로 사용되는 함수. 재정의 필요없음
@@ -83,6 +85,8 @@ public class MonsterController : BaseController
 
     public void SetCurrentHp(int newHp) => info.StatInfo.Hp = newHp;
 
+    public void SetDirection(bool isRight) { this.isRight = isRight; }
+    
     private IEnumerator SpawnCoroutine()
     {
         monsterCollider.enabled = false;

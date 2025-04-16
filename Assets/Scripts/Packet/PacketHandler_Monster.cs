@@ -41,6 +41,15 @@ public partial class PacketHandler
             bc.SetDestination(movePacket.DestinationX, movePacket.DestinationY);
         }
 
+
+        {
+            MonsterController mc = go.GetComponent<MonsterController>();
+            if (mc == null)
+                return;
+
+            mc.SetDirection(movePacket.IsRight);
+        }
+        
         // 일반몬스터의 경우
         NormalMonsterController nmc = go.GetComponent<NormalMonsterController>();
         if (nmc != null)

@@ -29,8 +29,6 @@ public class NormalMonsterController : MonsterController
     // 패킷 수신 시 세팅되는 값
     NormalMonsterState currentState;
     NormalMonsterSkill currentSkill = NormalMonsterSkill.Skill0;    // TODO: 아직 일반 몬스터 스킬 구현 계획 없음.
-    bool isRight;
-
     protected override void Update()
     {
         if (isAlreadyDie) return;
@@ -136,14 +134,7 @@ public class NormalMonsterController : MonsterController
                 break;
         }
     }
-
-    // 패킷 수신 시 핸들러에서 호출. 서버에서 보낸 패킷에 따라 스프라이트 방향 설정 
-    public override void SetDirection(bool isRight)
-    {
-        this.isRight = isRight;
-    }
-
-
+    
     // TODO: 아직 일반 몬스터 스킬 구현 계획 없음.
     public void SetNormalMonsterSkillType(BossMonsterSkillType newSkill)
     {

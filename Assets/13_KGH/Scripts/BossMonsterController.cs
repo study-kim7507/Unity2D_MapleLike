@@ -31,7 +31,6 @@ public class BossMonsterController : MonsterController
     // 패킷 수신 시 세팅되는 값
     BossMonsterState currentState = BossMonsterState.Idle;
     BossMonsterSkill currentSkill = BossMonsterSkill.DarkGenesis;
-    bool isRight;
 
     [Header("보스몬스터 스킬")]
     // 스킬 발사체 스폰 포지션
@@ -174,13 +173,7 @@ public class BossMonsterController : MonsterController
                 break;
         }
     }
-
-    // 패킷 수신 시 핸들러에서 호출. 서버에서 보낸 패킷에 따라 스프라이트 방향 설정.
-    public override void SetDirection(bool isRight)
-    {
-        this.isRight = isRight;
-    }
-
+    
     // 패킷 수신 시 핸들러에서 호출. 서버에서 보낸 패킷에 따라 어떤 스킬을 사용할 지 결정.
 
     public void SetBossSkillType(BossMonsterSkillType newSkill)

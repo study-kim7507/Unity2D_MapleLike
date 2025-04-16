@@ -256,40 +256,11 @@ public class ObjectManager : MonoBehaviour
 
     public void AddMonster(MonsterInfo info)
     {
-        GameObjectType objectType = GetObjectTypeById(info.MonsterId);
-
-        if (objectType == GameObjectType.Normalmonster)
-        {
-            string monsterName = Regex.Replace(info.Name, @"_[0-9]+$", "");     // "_"와 뒤에 숫자 제거
-
-            GameObject go = Instantiate(MonsterManager.Instance.GetMonsterPrefab(monsterName));
-            go.name = info.Name;
-            go.transform.position = new Vector3(info.DestinationX, info.DestinationY, 0f);
-
-            go.GetComponent<MonsterController>().UpdateInfo(info);
-            go.GetComponent<BaseController>().SetDestination(info.DestinationX, info.DestinationY);
-
-            _objects.Add(info.MonsterId, go);
-
-            NormalMonsterController nmc = go.GetComponent<NormalMonsterController>();
-            nmc.Id = info.MonsterId;
-        }
-        else if (objectType == GameObjectType.Bossmonster)
-        {
-            string monsterName = Regex.Replace(info.Name, @"_[0-9]+$", "");     // "_"와 뒤에 숫자 제거
-
-            GameObject go = Instantiate(MonsterManager.Instance.GetMonsterPrefab(monsterName));
-            go.name = info.Name;
-            go.transform.position = new Vector3(info.DestinationX, info.DestinationY, 0f);
-
-            go.GetComponent<MonsterController>().UpdateInfo(info);
-            go.GetComponent<BaseController>().SetDestination(info.DestinationX, info.DestinationY);
-
-            _objects.Add(info.MonsterId, go);
-
-            BossMonsterController bmc = go.GetComponent<BossMonsterController>();
-            bmc.Id = info.MonsterId;
-        }
+        GameObject monster = MonsterManager.Instance.CreateMonster(info);
+        if (monster == null) return;
+        
+        // 추가된 몬스터를 객체 관리에 추가
+        _objects.Add(info.MonsterId, monster);
     }
 
     public void Remove(int id)

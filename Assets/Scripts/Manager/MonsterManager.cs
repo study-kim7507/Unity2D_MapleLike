@@ -1,20 +1,16 @@
 using System.Collections.Generic;
+using System.Text.RegularExpressions;
+using Google.Protobuf.Protocol;
 using UnityEngine;
-
-[System.Serializable]
-public class StringGameObjectPair
-{
-    public string name;
-    public GameObject prefab;
-}
 
 public class MonsterManager : MonoBehaviour
 {
     private static MonsterManager _instance;
     public static MonsterManager Instance { get { return _instance; } }
 
-    public List<StringGameObjectPair> monsterPrefabs = new List<StringGameObjectPair>();
-
+    [SerializeField] private BossMonsterFactory _bossMonsterFactory;
+    [SerializeField] private NormalMonsterFactory _normalMonsterFactory;
+    
     private void Awake()
     {
         if (_instance != null)
@@ -25,20 +21,30 @@ public class MonsterManager : MonoBehaviour
         {
             _instance = this;
             DontDestroyOnLoad(gameObject);
+
         }
     }
 
-    public GameObject GetMonsterPrefab(string name)
+    public GameObject CreateMonster(MonsterInfo info)
     {
-        foreach (var pair in monsterPrefabs)
+        string monsterName = Regex.Replace(info.Name, @"_[0-9]+$", "");
+
+        GameObject monster = _normalMonsterFactory.CreateMonster(monsterName);
+        if (monster == null)
         {
-            if (pair.name.Equals(name, System.StringComparison.OrdinalIgnoreCase))
-            {
-                return pair.prefab;
-            }
+            monster = _bossMonsterFactory.CreateMonster(monsterName);
         }
 
-        Debug.LogWarning("Monster prefab not found for name: " + name);
-        return null; // 몬스터 프리팹을 찾지 못한 경우 null 반환
+        // 둘 다 실패하면 null 반환
+        if (monster == null)
+        {
+            Debug.LogWarning($"Monster creation failed: {monsterName}");
+            return null;
+        }
+        
+        MonsterController mc = monster.GetComponent<MonsterController>();
+        mc.UpdateInfo(info);
+
+        return monster;
     }
 }

@@ -971,6 +971,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1979635113}
   - component: {fileID: 1979635112}
+  - component: {fileID: 1979635115}
+  - component: {fileID: 1979635114}
   m_Layer: 0
   m_Name: '@MonsterManager'
   m_TagString: Untagged
@@ -990,17 +992,46 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40c65af76eeeb454cb847b68c70553f4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  monsterPrefabs:
-  - name: "\uB9AC\uBCF8\uB3FC\uC9C0"
-    prefab: {fileID: 4944926653773337540, guid: 387373bf3aab8ac4fa7f55fbfbe0983c, type: 3}
-  - name: "\uC2AC\uB77C\uC784"
-    prefab: {fileID: 7670546102615895462, guid: c31e0f960441e5349983aded75bc0667, type: 3}
+  _bossMonsterFactory: {fileID: 1979635115}
+  _normalMonsterFactory: {fileID: 1979635114}
+--- !u!4 &1979635113
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1979635111}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1979635114
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1979635111}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc1d54b204a7af341bc7b7508da6480e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  normalMonsterPrefabsList:
   - name: "\uB2EC\uD33D\uC774"
     prefab: {fileID: 6463191910955712951, guid: 436527f9b1d173a4c8d09167172cd820, type: 3}
-  - name: "\uC8FC\uD669\uBC84\uC12F"
-    prefab: {fileID: 7325305988052647113, guid: 7ee1f2a28b8a8e9489bb444924f5765d, type: 3}
+  - name: "\uC2AC\uB77C\uC784"
+    prefab: {fileID: 7670546102615895462, guid: c31e0f960441e5349983aded75bc0667, type: 3}
   - name: "\uC2A4\uD140\uD504"
     prefab: {fileID: 3083865641815756476, guid: 6cc8f07f3a7ecf84c886059ac79df223, type: 3}
+  - name: "\uB9AC\uBCF8\uB3FC\uC9C0"
+    prefab: {fileID: 4944926653773337540, guid: 387373bf3aab8ac4fa7f55fbfbe0983c, type: 3}
+  - name: "\uC8FC\uD669\uBC84\uC12F"
+    prefab: {fileID: 7325305988052647113, guid: 7ee1f2a28b8a8e9489bb444924f5765d, type: 3}
   - name: "\uD398\uC5B4\uB9AC"
     prefab: {fileID: 4798513546556474222, guid: 773cc0f5a1a90bf4894f3f25e968c31a, type: 3}
   - name: "\uCD08\uB85D\uBC84\uC12F"
@@ -1019,23 +1050,21 @@ MonoBehaviour:
     prefab: {fileID: 6562041448368726569, guid: ea4920c162321d941903aa3a6e9076d6, type: 3}
   - name: "\uC815\uC2DD\uAE30\uC0ACE"
     prefab: {fileID: 1104659319867017592, guid: a6e7c829928954842919a939d3d8a8be, type: 3}
-  - name: "\uC2DC\uADF8\uB108\uC2A4"
-    prefab: {fileID: 3570453975036057955, guid: b5bfdc253f750f14ab8d59faefe1eadc, type: 3}
---- !u!4 &1979635113
-Transform:
+--- !u!114 &1979635115
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1979635111}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7fe03ddd42c8ff445b2f89fadb7be36c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bossMonsterPrefabsList:
+  - name: "\uC2DC\uADF8\uB108\uC2A4"
+    prefab: {fileID: 3570453975036057955, guid: b5bfdc253f750f14ab8d59faefe1eadc, type: 3}
 --- !u!114 &2508987420269248
 MonoBehaviour:
   m_ObjectHideFlags: 0

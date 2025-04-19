@@ -38,7 +38,7 @@
 | 분류               | 사용 툴                                                                                                                                                                                                                       |
 |--------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **언어 & 엔진**     | <img src="https://img.shields.io/badge/C%23-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white"> <img src="https://img.shields.io/badge/unity Engine-FFFFFF.svg?style=for-the-badge&logo=unity&logoColor=black">       |
-| **협업 툴**         | <img src="https://img.shields.io/badge/discord-5865F2.svg?style=for-the-badge&logo=discord&logoColor=white">                                                                                                                 |
+| **협업 툴**         | <img src="https://img.shields.io/badge/discord-5865F2.svg?style=for-the-badge&logo=discord&logoColor=white"> <img src="https://img.shields.io/badge/notion-white.svg?style=for-the-badge&logo=notion&logoColor=black">   |
 | **버전 & 이슈 관리** | <img src="https://img.shields.io/badge/github-181717.svg?style=for-the-badge&logo=github&logoColor=white"> <img src="https://img.shields.io/badge/plasticscm-47a3ea.svg?style=for-the-badge">                               |
 
 <br>
